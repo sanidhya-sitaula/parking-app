@@ -1,38 +1,237 @@
-.App {
-  text-align: center;
+body{
+  margin-left: 10%;
+  margin-right:10%;
+  margin-top: 3%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header{
+  text-align:center;
+  height: 40vh;
+  background-position: center;
+  background-repeat:unset;
+  font-family: 'Rajdhani';
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+
+  .header-message{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 300%;
+    font-weight: 400;
+    letter-spacing: 0.1em;
   }
-}
+
+  .header-submessage{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 120%;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+
+  .mapcontainer{
+    width: 100%;
+  }
+
+
+  .mapcontainer2{
+    margin: 5% 0;
+    width: 100%;
+  }
+
+  .navbar-ul{
+    margin-top: 2%;
+    list-style: none;
+    display: inline-flex;
+    float: left;
+  }
+
+  .number-icon{
+    border-radius: 50%;
+    border: 3px solid gray;
+    padding: 20px;
+    font-size: 150%;
+    width: 5%;
+    text-align: center;
+    margin-bottom: 3%;
+    color :gray;
+  }
+
+  .border {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 2%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      hsl(0, 0%, 80%),
+      hsl(0, 0%, 20%),
+      hsl(0, 0%, 80%)
+    );
+  }
+
+  .menu-item{
+    margin-right: 30%;
+  }
+
+  .menu-item2 .link{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+  }
+
+  .navbar-user-info{
+    margin-top: 2%;
+    float:right;
+    list-style: none;
+    display: inline-flex; 
+  }
+
+  .menu-item .link{
+    text-decoration: none;
+    color : white;
+    transition: border 0.2s;
+    white-space: nowrap;
+  }
+
+  .menu-item .link:hover{
+    cursor: pointer;
+    border-bottom: 1px solid white;
+  }
+
+  .stores{
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
+
+
+  .categories-list{
+    list-style: none;
+  }
+
+  .categories-list li{
+    margin-bottom: 2%;
+  }
+
+  .categories-list li a:hover{
+    cursor: pointer;
+    border-bottom: 1px solid black;
+  }
+
+  .current-location{
+    margin-left: 5%;
+  }
+
+  .explore-message{
+    font-family: 'Nunito';
+    text-align: center;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    font-weight: 300;
+  }
+
+  .selected-category{
+    border: 1px solid gray; 
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    background: radial-gradient(
+      ellipse at left bottom,
+      rgb(220, 220, 220) 0%,
+      rgba(255, 254, 254, 0.9) 59%,
+      rgba(255, 255, 255, 0.9) 100%
+    );
+    box-shadow: 0 30px 70px -65px rgba(0, 0, 0, 0.8);
+  }
+
+  .MuiTypography-root{
+    font-family: 'Nunito' !important;
+  }
+
+  .categories-list{
+    margin-top: 0;
+    margin-left: 2%;
+    padding: 10px;
+    border: 1px dashed gray;
+    border-radius: 10px;
+    background: radial-gradient(
+      ellipse at left bottom,
+      rgb(232, 232, 232) 0%,
+      rgba(255, 254, 254, 0.9) 59%,
+      rgba(255, 255, 255, 0.9) 100%
+    );
+  }
+
+  .about-description{
+    margin-top: 5%;
+  }
+
+
+  .aval-form{
+    margin-right:280px;
+  }
+
+  .login-form{
+    position: absolute;
+    left: 27%;
+    top: 50vh;
+    transform: translate(-50%, 0); 
+  }
+
+  .login-form2{
+    position: absolute;
+    left: 50%;
+    top: 75vh;
+  }
+
+  .login-form-items{
+    list-style: None;
+  }
+
+  
+
+  .login-form-items li{
+    margin-bottom: 2%;
+  }
+
+  /* .MuiFormControl-root, .css-1nrlq1o-MuiFormControl-root{
+    width: 100% !important;
+  } */
+
+  .submit-button{
+    width: 100%;
+    color : white;
+    background: black;
+    cursor: pointer;
+    padding: 20px;
+    font-size: large;
+    font-family: 'Nunito';
+  }
+
+  .submit-button2{
+    width: 100%;
+    color : white;
+    background: black;
+    cursor: pointer;
+    padding: 20px;
+    font-size: large;
+    font-family: 'Nunito';
+  }
+
+
+
+  .store-profile-link{
+    text-decoration: none;
+  }
+
+
+  .loader{
+    margin: 25% 45%;
+  }
