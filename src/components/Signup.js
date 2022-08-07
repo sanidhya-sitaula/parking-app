@@ -33,14 +33,13 @@ const Signup = (props) => {
   const navigate = useNavigate();
 
   const handleSubmit = async (
-  
     email,
     password,
     setEmailError,
     setPasswordError
   ) => {
-    await handleSignUp(
     
+    await handleSignUp(
       email,
       password,
       setEmailError,

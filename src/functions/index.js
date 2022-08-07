@@ -121,9 +121,12 @@ export const handleSubmitSpot = (
   price,
   description,
   type,
-  image 
 ) => {
-  return db.collection(`/spaces/`).add({email: email, address: address, coords: coords, available_start: available_start, available_end: available_end, price: price, description: description, type: type, image: image});
+
+
+
+
+  return db.collection(`/spaces/`).add({email: email, address: address, coords: coords, available_start: available_start, available_end: available_end, price: price, description: description, type: type});
 }
 
 
@@ -133,11 +136,17 @@ export const handleSignUp = (
   setEmailError,
   setPasswordError
 ) => {
+
+  console.log(email);
+  console.log(password);
+
   fire
     .auth()
     .createUserWithEmailAndPassword(email, password)
     .catch((err) => {
+      console.log(err)
       switch (err.code) {
+        
         case "auth/email-already-in-use":
         case "auth/invalid-email":
           setEmailError(err.message);
